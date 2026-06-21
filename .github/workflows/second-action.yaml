@@ -1,0 +1,16 @@
+name: second-action-with-code
+on: push
+jobs:
+  test-code:
+    runs-on: ubuntu
+    steps:
+      - name: Get code
+        uses: actions/checkout@v4
+      - name: Install NodeJS
+        uses: actions/setup-node@v6
+        with:
+          node-version: 20
+      - name:
+        run: npm ci
+      - name: Run test
+        run: npm test
