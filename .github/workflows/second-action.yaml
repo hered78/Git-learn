@@ -15,3 +15,4 @@ jobs:
         working-directory: ./code-for-2nd-action
       - name: Run test
         run: npm test
+        working-directory: ./code-for-2nd-action
