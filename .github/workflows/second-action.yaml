@@ -10,7 +10,8 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: 20
-      - name:
+      - name: Install dependencies
         run: npm ci
+        working-directory: ./code-for-2nd-action
       - name: Run test
         run: npm test
