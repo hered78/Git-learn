@@ -1,5 +1,5 @@
 name: second-action-with-code
-on: push
+on: workflow_dispatch
 jobs:
   test-code:
     runs-on: ubuntu-latest
